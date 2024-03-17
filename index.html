@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grêmio Rupestre</title>
+
+    <!--icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+
+    <!--Bootstrap 5.3.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-block d-lg-none" href="#">
+                <img src="img/LOGO OFICIAL.jpg" alt="Grêmio Rupestre" width="60" class="img-fluid rounded-4 shadow">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutGremioPage">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#chapaPage">Nossa Chapa</a>
+                    </li>
+                    <li class="nav-item d-none d-lg-block">
+                        <a href="#" class="nav-link nav-link-logo">
+                            <img src="img/LOGO OFICIAL.jpg" alt="Grêmio Rupestre" width="60"
+                                class="img-fluid rounded-4 shadow d-none d-lg-block">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#propostasPage">Propostas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#extraPage">Extra</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatoPage">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Titulo da página-->
+    <header class="container-fluid d-flex flex-column align-items-center justify-content-center" id="titlePage"
+        style="margin-top: 10rem;">
+        <h1 class="display-3 text-tracking-display-3 text-uppercase font-cocogoose-pro text-center">grêmio</h1>
+        <h1 class="display-1 text-tracking-display-1 font-ink text-center text-primary-color">Rupestre</h1>
+    </header>
+
+    <!--Sobre-->
+    <main>
+
+        <!--o que é o gremio?-->
+        <div class="container-fluid bg-primary-color p-3 mt-5" id="aboutGremioPage">
+
+            <div class="container">
+
+                <!--O que é o grêmio?-->
+                <div class="row my-3 px-3" id="aboutGremio">
+                    <div class="col-12">
+                        <h2 class="text-center text-white font-cocogoose-pro">O que é o Grêmio?</h2>
+                    </div>
+                    <div class="col-12 col-md-6 p-5 d-flex align-self-center justify-content-center imgAboutGremio">
+                        <img src="img/SVG/Ativo 1.svg" alt="fotoGremio" class="img-fluid roundend-3"
+                            style="object-fit: cover; filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)); max-height: 250px;">
+                    </div>
+                    <div class="col-12 col-md-6 mt-md-5 mt-lg-5">
+                        <!--button toggle group-->
+                        <div class="d-flex w-100 btn-group">
+                            <button type="button" class="btn btn-primary btn-importancia"
+                                onclick="onClickShowText('importancia')">Importância</button>
+                            <button type="button" class="btn btn-primary btn-funcoes"
+                                onclick="onClickShowText('funcoes')">Funções</button>
+                            <button type="button" class="btn btn-primary btn-voto"
+                                onclick="onClickShowText('voto')">Voto</button>
+                        </div>
+
+                        <div class="textos text-center">
+                            <!--texto - importância-->
+                            <div class="importancia lead">
+                                <p class="text-white mt-3">
+                                    O Grêmio Estudantil é uma organização estudantil que representa os interesses dos
+                                    estudantes de uma escola. Ele é responsável por organizar eventos, representar os
+                                    alunos
+                                    perante a direção da escola e promover ações que visem o bem-estar dos estudantes.
+                                </p>
+                            </div>
+
+                            <!--texto - funções-->
+                            <div class="funcoes lead d-none">
+                                <p class="text-white mt-3">
+                                    O Grêmio Estudantil é responsável por organizar eventos, representar os alunos
+                                    perante a
+                                    direção da escola e promover ações que visem o bem-estar dos estudantes.
+                                </p>
+                            </div>
+
+                            <!--texto - voto-->
+                            <div class="voto lead d-none">
+                                <p class="text-white mt-3">
+                                    Seu voto é muito importante para a escolha da chapa que irá representar os
+                                    estudantes nesta gestão.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--nossa chapa-->
+        <div class="container position-relative my-5 p-5" id="chapaPage">
+
+            <div class="position-absolute top-0 start-50 translate-middle-x">
+                <i class="bi bi-people fs-1 text-primary-color"></i>
+            </div>
+
+            <h2 class="text-center font-cocogoose-pro">Nossa Chapa</h2>
+            <p class="lead text-center">Conheça nossos integrantes e seus respectivos cargos</p>
+            <hr>
+
+            <!--carosel-->
+            <div class="carousel slide carousel-dark" id="carouselChapa">
+
+                <!--indicadores-->
+                <div class="carousel-indicators d-none d-md-flex">
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselChapa" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                </div>
+
+                <!--chapa-->
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active" id="presidenteChapa">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=PRESIDENTE+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 2 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="vicePresidenteChapa">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=VICE-PRESIDENTE+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 3 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="tesoureiroChapa">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 4 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="secretarioChapa">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 5 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="coordCultural">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 6 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="coordEsportivo">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 7 - instagram chapa-1.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="coordSocial">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 7 - instagram chapa-2.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+
+                    <div class="carousel-item" id="coordEvento">
+
+                        <!--telas maiores que 768px-->
+                        <img src="https://placehold.co/1200x500?text=TESOUREIRO+1200px²" alt="foto"
+                            class="d-md-block d-none w-100 shadow rounded-3">
+
+                        <!--telas menores que 768px-->
+                        <img src="img/slide 7 - instagram chapa.jpg" alt="foto"
+                            class="d-md-none d-block w-100 shadow rounded-3">
+
+                    </div>
+                </div>
+
+                <!--botões de controle-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselChapa"
+                    data-bs-slide="prev">
+                    <span class="bi bi-caret-left-square-fill fs-1 text-black" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselChapa"
+                    data-bs-slide="next">
+                    <span class="bi bi-caret-right-square-fill fs-1 text-black" aria-hidden="true"></span>
+                </button>
+            </div>
+
+        </div>
+
+        <!--propostas-->
+        <div class="container-fluid bg-body-tertiary mt-5" id="propostasPage">
+
+            <div class="container position-relative p-5">
+
+                <div class="position-absolute top-0 start-50 translate-middle-x">
+                    <i class="bi bi-megaphone fs-1 text-primary-color"></i>
+                </div>
+
+                <h2 class="text-center font-cocogoose-pro">Nossas Propostas</h2>
+                <p class="lead text-center">Conheça nossas propostas para a gestão</p>
+
+                <!--Coord. Geral-->
+                <div class="row my-5">
+
+                    <!--img coord geral-->
+                    <div class="col-12 col-md-4 align-self-center imgCoordGeral">
+                        <img src="img/Prancheta 1.svg" alt="foto" class="img-fluid rounded-3">
+                    </div>
+
+                    <!--texto coord geral-->
+                    <div class="col-12 col-md-8 mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação Geral</h3>
+                        <p class="lead text-center">
+                            A coordenção geral responsável pe
+                        </p>
+
+                        <ul>
+                            <li>Caixinha Anônima: para sugestões, críticas e outros;</li>
+                            <li>Jornal IFPI: noticiar os alunos, artigos, crônicas, entre outros conteúdos da comunidade
+                                escolar;</li>
+                            <li>Eventos de integração: promover eventos que aproximem os alunos;</li>
+                            <li>Assembleia do Grêmio: uma extensão que promete uma maior representatividade na escola,
+                                onde as coordenações trabalhariam juntos com 3 pessoas de cada sala, buscando suprir
+                                necessidades e melhorar a comunicação.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!--Coord. Cultural-->
+                <div class="row my-5">
+
+                    <!--texto coord cultural - telas maiores que 768px-->
+                    <div class="col-12 col-md-8 d-md-block d-none mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação Cultural</h3>
+                        <p class="lead text-center">
+                            A coordenação cultural busca incluir a cultura local dentro do ambiente escolar, promovendo
+                            a cultura e a arte.
+                        </p>
+                        <ul>
+                            <li>Oficinas de artesanato: realização de oficinas práticas de artesanato, onde o aluno
+                                possa aprender técnicas de trabalho, estimulando a criatividade e desenvolvimento
+                                artístico.</li>
+                            <li>Exaltação da cultura brasileira: promover eventos e atividades que valorizem e celebrem
+                                a rica diversidade nacional</li>
+                            <li>Clube de Leitura: criação de um clube de leitura para interação entre os alunos entre a
+                                compartilhação de ideias, discutimento, debates e leitura em conjunto de obras
+                                literárias.</li>
+                        </ul>
+                    </div>
+
+                    <!--img coord cultural-->
+                    <div class="col-12 col-md-4 align-self-center">
+
+                        <img src="img/Prancheta 2.svg" alt="foto" class="img-fluid rounded-3">
+
+                    </div>
+
+                    <!--texto coord cultural - telas menores que 768px-->
+                    <div class="col-12 col-md-8 d-md-none d-block mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação Cultural</h3>
+                        <p class="lead text-center">
+                            A coordenação cultural busca incluir a cultura local dentro do ambiente escolar, promovendo
+                            a cultura e a arte.
+                        </p>
+                        <ul>
+                            <li>Oficinas de artesanato: realização de oficinas práticas de artesanato, onde o aluno
+                                possa aprender técnicas de trabalho, estimulando a criatividade e desenvolvimento
+                                artístico.</li>
+                            <li>Exaltação da cultura brasileira: promover eventos e atividades que valorizem e celebrem
+                                a rica diversidade nacional</li>
+                            <li>Clube de Leitura: criação de um clube de leitura para interação entre os alunos entre a
+                                compartilhação de ideias, discutimento, debates e leitura em conjunto de obras
+                                literárias.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!--Coord. Esportivo-->
+                <div class="row my-5">
+
+                    <!--img coord esportivo-->
+                    <div class="col-12 col-md-4">
+                        <img src="img/Prancheta 2_1.svg" alt="foto" class="img-fluid rounded-3">
+                    </div>
+
+                    <!--texto coord esportivo-->
+                    <div class="col-12 col-md-8 mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação de Esportes</h3>
+                        <p class="lead text-center">
+                            A coordenação esportiva é responsável por organizar eventos esportivos, como campeonatos,
+                            jogos, entre outros, além da interação entre eventos já existentes.
+                        </p>
+                        <ul>
+                            <li>Apoio a Liga de Esportes: visa oferecer suporte tanto a liga quanto aos alunos
+                                inscritos, como desenvolvimento de habilidades e apoio.</li>
+                            <li>Promover torneios: trazer a organização, divulgação e gerenciamento de eventos
+                                competitivos.</li>
+                            <li>Promover conhecimento em novas modalidades esportivas, incentivando a prática como
+                                também o conhecimento técnico.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!--Coord. Social-->
+                <div class="row my-5">
+
+                    <!--texto coord social - telas maiores que 768px-->
+                    <div class="col-12 col-md-8 d-md-block d-none mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação Social</h3>
+                        <p class="lead text-center">
+                            A coordenação social é responsável por organizar eventos sociais, como palestras, debates,
+                            entre outros.
+                        </p>
+                        <ul>
+                            <li>Palestras: tem como objetivo de abranger temas relevantes do mundo atual trazendo para
+                                os alunos.</li>
+                            <li>Arrecadação para ONGs: promover campanhas de arrecadação de alimentos, roupas, materiais
+                                escolares ou dinheiro para instituições de caridade ou ONGs locais.</li>
+                            <li>Oficinas e workshops: trazer oficinas e workshops sobre diversos temas, como técnicas de
+                                estudo, empreendorismo, habilidades socioemocionais, entre outros.</li>
+                        </ul>
+                    </div>
+
+                    <!--img coord social-->
+                    <div class="col-12 col-md-4 align-self-center">
+                        <img src="img/Prancheta 2_2.svg" alt="foto" class="img-fluid rounded-3">
+                    </div>
+
+                    <!--texto coord social - telas menores que 768px-->
+                    <div class="col-12 col-md-8 d-md-none d-block mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação Social</h3>
+                        <p class="lead text-center">
+                            A coordenação social é responsável por organizar eventos sociais, como palestras, debates,
+                            entre outros.
+                        </p>
+                        <ul>
+                            <li>Palestras: tem como objetivo de abranger temas relevantes do mundo atual trazendo para
+                                os alunos.</li>
+                            <li>Arrecadação para ONGs: promover campanhas de arrecadação de alimentos, roupas, materiais
+                                escolares ou dinheiro para instituições de caridade ou ONGs locais.</li>
+                            <li>Oficinas e workshops: trazer oficinas e workshops sobre diversos temas, como técnicas de
+                                estudo, empreendorismo, habilidades socioemocionais, entre outros.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <!--Coord. Eventos-->
+                <div class="row my-5">
+
+                    <!--img coord eventos-->
+                    <div class="col-12 col-md-4">
+                        <img src="img/Prancheta 2_3.svg" alt="foto" class="img-fluid rounded-3">
+                    </div>
+
+                    <!--texto coord eventos-->
+                    <div class="col-12 col-md-8 mt-5 mt-md-0 align-self-center">
+                        <h3 class="text-center">Coordenação de Eventos</h3>
+                        <p class="lead text-center">
+                            A coordenação de eventos é responsável por organizar eventos sociais e culturais, afim de
+                            que a comunidade escolar possa interagir e se divertir.
+                        </p>
+                        <ul>
+                            <li>O Arraia IFPI: Integrar a tradição temática que celebra as festas juninas, com decoração
+                                típica, comidas e bebidas
+                                típicas, apresentações de quadrilha, música ao vivo, competição de vestimentas, além de
+                                brincadeiras e jogos para toda a
+                                comunidade escolar.</li>
+                            <li>Semana da Arte: Com intuito de exibir a criatividade e a expressão artística dos alunos,
+                                com uma variedade de atividades
+                                como exposições de arte, apresentações teatrais, musicais, dança, workshops de pintura,
+                                escultura e outras formas de
+                                expressão artística.</li>
+                            <li>Cinema IFPI: Implementar sessões de cinema regulares, onde os alunos podem assistir a
+                                filmes selecionados que abordam
+                                temas relevantes, culturais ou simplesmente oferecem entretenimento.</li>
+                            <li>Halloween IFPI: Com a finalidade de introduzir uma festa temática de Halloween que
+                                oferece uma atmosfera divertida e
+                                assustadora, com decorações, fantasias, concursos de melhores fantasias, música, dança e
+                                jogos temáticos</li>
+                            <li>Entre outros (veja mais no documento)</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="row mt-5">
+
+                    <div class="col-12 text-center">
+                        <a href="https://drive.google.com/file/d/1Z3z3J9z3z3J9z3">https://drive.google.com/file/d/1QXkmbeM-qZi0-HFTWrYrA6eY0ubQYZ6Q/view?usp=drive_link</a>
+                        <p>Acesse aqui o documento oficial.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--extra-->
+        <div class="container-fluid bg-primary-color p-5" id="extraPage">
+
+            <div class="container">
+
+                <h2 class="text-center text-white font-cocogoose-pro">Extra</h2>
+                <p class="lead text-center text-white">Perguntas frequentes e outros.</p>
+
+                <div class="row my-5">
+
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center text-white">O voto é obrigatório?</h3>
+                        <p class="lead text-center text-white">
+                            Não, o voto é facultativo. No entanto, é importante que todos os estudantes participem do
+                            processo eleitoral, pois é através do voto que os estudantes escolhem seus representantes.
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <h3 class="text-center text-white">Como posso votar?</h3>
+                        <p class="lead text-center text-white">
+                            Para votar, basta assinalar a cédula de voto, que serão entregues em todas as salas e
+                            possuem as opções de voto nas chapas e o nulo. Após isso, leve a cédula até a urna no
+                            segundo pátio do IFPI, que estará disponível das 9:30h às 18:00h do referente dia,
+                            quinta-feira, 21 de março.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--contato-->
+        <div class="container-fluid bg-body-tertiary p-5" id="contatoPage">
+
+            <div class="container">
+
+                <h2 class="text-center font-cocogoose-pro">Contato</h2>
+                <p class="lead text-center">Entre em contato conosco</p>
+
+                <div class="row my-5">
+
+                    <!--informações-->
+                    <div class="col-12 col-md-6 align-self-center">
+                        <!--Email-->
+                        <h3 class="text-center">E-mail:</h3>
+                        <p class="lead text-center"><a href="mailto:carlosantunes.dev@gmail.com"
+                                class="text-decoration-none text-primary-color">carlosantunes.dev@gmail.com</a></p>
+                        <p class="lead text-center"><a href="mailto:tatianernuness@gmail.com"
+                                class="text-decoration-none text-primary-color">tatianernuness@gmail.com</a></p>
+
+                        <!--Telefone-->
+                        <h3 class="text-center">Telefone:</h3>
+                        <p class="lead text-center"><a href="tel:+5574999889518"
+                                class="text-decoration-none text-primary-color">(74) 999 88 9518</a></p>
+                        <p class="lead text-center"><a href="tel:+5589981306131"
+                                class="text-decoration-none text-primary-color">(89) 981 30 6131</a></p>
+
+                        <!--Rede Sociais-->
+                        <h3 class="text-center">Redes Sociais:</h3>
+                        <div class="d-flex flex-column justify-content-center text-center">
+                            <a href="https://www.instagram.com/carlusnz/" target="_blank"
+                                class="text-decoration-none text-primary-color fw-bold">
+                                <i class="bi bi-instagram fs-3 text-primary-color"></i>
+                                @carlusnz - Presidente
+                            </a>
+                            <a href="https://www.instagram.com/tatianenunesss/" target="_blank"
+                                class="text-decoration-none text-primary-color fw-bold">
+                                <i class="bi bi-instagram fs-3 text-primary-color"></i>
+                                @tatianenunesss - Vice-Presidente
+                            </a>
+                        </div>
+                    </div>
+
+                    <!--imagem-->
+                    <div class="col-md-6 d-none d-md-block d-flex justify-content-center">
+                        <img src="img/Ativo 4.png" alt="foto" class="img-fluid">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <!--footer-->
+    <footer class="container-fluid bg-primary-color p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 mb-3">
+                    <h3 class="text-center text-white">Grêmio Rupestre</h3>
+                    <p class="text-white text-center">Carlos Antunes 2023 - Todos os direitos reservados &copy;</p>
+                    <p class="lead text-center text-white">BR-020, S/N, Bairro Primavera, São Raimundo Nonato - PI</p>
+                    <div class="d-flex justify-content-center">
+                        <img src="https://imgs.search.brave.com/bQtmfCM1_tvdhsi6ZBhCPKawpS8umaE_kTa1u_x2pso/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi8yLzIzL0lu/c3RpdHV0b19GZWRl/cmFsX2RvX1BpYXUl/QzMlQURfLV9NYXJj/YV9WZXJ0aWNhbF8y/MDE1LnN2Zy81MTJw/eC1JbnN0aXR1dG9f/RmVkZXJhbF9kb19Q/aWF1JUMzJUFEXy1f/TWFyY2FfVmVydGlj/YWxfMjAxNS5zdmcu/cG5n"
+                            alt="logo do ifpi" class="img-fluid bg-white py-2 rounded mx-2" width="100">
+                        <img src="img/LOGO TRANSPARENTE.png" alt="logo" class="img-fluid bg-white rounded-pill mx-2"
+                            width="100">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h3 class="text-center text-white">Redes Sociais</h3>
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.instagram.com/comissaoeleitoralif2024" target="_blank"
+                            class="text-decoration-none text-white fw-bold">
+                            <i class="bi bi-instagram fs-3 text-white"></i>
+                            @comissaoeleitoral
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
